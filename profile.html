@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="C:\Users\eniol\OneDrive\Pictures\Saved Pictures\Profile\logo.png" alt="logo" 
+            width="100"
+            id="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <!-- <ul class="dropdown">
+                    <li><a href="#">LinkedIn</a></li>                        
+                    <li><a href="#">Email</a></li>
+                </ul> -->
+            </ul>
+        </nav>
+    </header >
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Hi !</h2>
+            <h1>I am Eniola Farinde</h1>
+            <h2>And I am a <span class="multiple-text"></span></h2>
+            <p>Welcome aboard to know more about me</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/eniola-farinde/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/EnnyBae-Chilled"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/shes_chilled/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/chilled1127"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="C:\Users\eniol\OneDrive\Desktop\RESUMES\Eniola Olawumi Farinde RESUME(2).pdf" class="btn">Get Resume</a>  
+        </div>
+        <div class="profile-pic">
+            <img src="C:\Users\eniol\OneDrive\Pictures\Saved Pictures\Profile\Profile-pic1.png" 
+            alt="">
+        </div>
+    </section> 
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="C:\Users\eniol\OneDrive\Pictures\Saved Pictures\Profile\about (2).png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">ABOUT <span>ME</span></h2>
+            <p>
+            I am a computer science student with a knack for software <br> development.
+            Through internships and personal projects, I've delved <br> into full stack 
+            software development, mastering languages like <br> Python, and JavaScript
+            From designing elegant user interfaces to <br> optimizing backend performance, 
+            I'm driven by a passion for creating <br>impactful solutions. With my skills and 
+            experiences, I am currently <br> looking into software development and engineering 
+            internship <br>opportunities to gain hands-on experience and mentorship, and to <br>
+            further broaden my horizon. 
+            </p>
+            <h2 class="skills">MY SKILLS</h2>
+            <li><a href="#">Technical Skills</a></li>
+            <ul class="dropdown">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Data Analytics</li>                    
+                <li>Attack Framework</li>
+            </ul>
+            <li><a href="#">Soft Skills</a></li>
+            <ul class="dropdown">
+                <li>Leadership</li>
+                <li>Written and Verbal Communucation</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="project-container">
+            <div class="project-box">
+                <a href="https://github.com/EnnyBae-Chilled/To-do-list">
+                    <img src="C:\Users\eniol\OneDrive\Pictures\Saved Pictures\Profile\img3.png" alt="">
+                    <div class="project-layer">
+                    <h4>To-do List App</h4>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+                
+            </div>
+
+            <div class="project-box">
+                <img src="C:\Users\eniol\OneDrive\Pictures\Saved Pictures\Profile\img1.png" alt="">
+                <div class="project-layer">
+                    <h4>Vivi's Initiative Website</h4>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <a href="https://github.com/EnnyBae-Chilled/OIBSIP/blob/main/landingpage.html" target="_blank">
+                    <img src="C:\Users\eniol\OneDrive\Pictures\Saved Pictures\Profile\img2.png" alt="">
+                    <div class="project-layer">
+                        <h4>UI/UX Design</h4>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="87e0150d-ef69-456a-a71a-738a46cfb2ed">
+            <div class="input-box">
+                <input type="text" placeholder="Enter your full name" name="name">
+                <input type="email" placeholder="Enter your email address" name="email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Enter your mobile number" name="number">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Enter your Message" id="message"></textarea>
+            <input type="submit" value="Send Message" class="btn"> 
+            
+        </form>
+        <a href="https://www.linkedin.com/in/eniola-farinde/" class="btn">Connect with me on LinkedIn <i class="fa-solid fa-arrow-right"></i></a>  
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @EniolaFarinde | All Rights Reserved. </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "eniolafarinde@gmail.com",
+                Password : "#Eniola2005#",
+                To : 'eniolafarinde3@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Email From Portfolio",
+                Body : "And this is the body",
+            }).then(
+            message => alert(message)
+            );
+        }
+    </script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
