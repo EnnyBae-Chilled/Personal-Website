@@ -23,7 +23,7 @@
 // }
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Software Developer', 'UI/UX Designer', 'Front-End Developer', 'Computer Science Student'],
+    strings: ['Software Developer', 'UI/UX Designer', 'Front-End Developer', 'Computer Science Student', 'Cybersecurity Student'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
