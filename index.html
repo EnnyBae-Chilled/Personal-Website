@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eniola Farinde </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="profile.css">
@@ -17,13 +17,34 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skill">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <!-- <ul class="dropdown">
-                    <li><a href="#">LinkedIn</a></li>                        
-                    <li><a href="#">Email</a></li>
-                </ul> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile-nav">
+            <!-- <div class="logo-container">
+                <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/logo.png?raw=true" alt="logo" 
+                width="100"
+                id="logo">
+            </div> -->
+            <div class="mobile-nav-menu">
+                <div class="mobile-nav-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()" class="active">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skill" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+            <ul>
+
             </ul>
         </nav>
     </header >
@@ -39,7 +60,7 @@
                 <a href="https://www.instagram.com/shes_chilled/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/chilled1127"><i class="fa-brands fa-twitter"></i></a>
             </div>
-            <a href="RESUME - Eniola Olawumi Farinde.pdf" class="btn">Get Resume</a>  
+            <a href="C:\Users\eniol\OneDrive\RESUME _ Eniola.Olawumi.Farinde.pdf" class="btn">Get Resume</a>  
         </div>
         <div class="profile-pic">
             <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/Profile-pic1.png?raw=true" 
@@ -47,73 +68,199 @@
         </div>
     </section> 
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/about.png?raw=true" alt="">
+        <h2 class="heading">About <span>Me</span></h2>
+        <!-- <p class="text">A little bit about myself...</p> -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/about.png?raw=true" alt="">
+            </div>
+            <div class="about-content">
+                <div class="ed-container">
+                    <div class="ed-details">
+                        <i class="fa-solid fa-graduation-cap fa-5x" style="color: #daa520;"></i>
+                        <h3>Education</h3>
+                        <p>Bachelor of Science<br>
+                        Major(s): Computer Science &<br> Cybersecurity<br>
+                        (2023-2027)</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>
+                    I am a computer science student with a knack for software <br> development.
+                    Through internships and personal projects, I've delved <br> into full stack 
+                    software development, mastering languages like <br> Python, JavaScript, React and Swift. 
+                    From designing elegant user interfaces <br> to optimizing backend performance, 
+                    I'm driven by a passion for creating <br>impactful solutions. With my skills and 
+                    experiences, I am currently <br> looking into software development and engineering 
+                    internship <br>opportunities to gain hands-on experience and mentorship, and to <br>
+                    further broaden my horizon. 
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="about-content">
-            <h2 class="heading">ABOUT <span>ME</span></h2>
-            <p>
-            I am a computer science student with a knack for software <br> development.
-            Through internships and personal projects, I've delved <br> into full stack 
-            software development, mastering languages like <br> Python, and JavaScript
-            From designing elegant user interfaces to <br> optimizing backend performance, 
-            I'm driven by a passion for creating <br>impactful solutions. With my skills and 
-            experiences, I am currently <br> looking into software development and engineering 
-            internship <br>opportunities to gain hands-on experience and mentorship, and to <br>
-            further broaden my horizon. 
-            </p>
-            <h2 class="skills">MY SKILLS</h2>
-            <li><a href="#">Technical Skills</a></li>
-            <ul class="dropdown">
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Data Analytics</li>                    
-                <li>Attack Framework</li>
-            </ul>
-            <li><a href="#">Professional Skills</a></li>
-            <ul class="dropdown">
-                <li>Leadership</li>
-                <li>Written and Verbal Communucation</li>
-                <li>Problem Solving</li>
-                <li>Teamwork</li>
-            </ul>
+        
+    </section> 
+    <section class="skill" id="skill">
+        <h2 class="skills">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-about-container">
+                <div class="skills-details-container">
+                    <h1 class="technical-skills-title">Technical Skills</h1>
+                    <div class="article-container">
+                        <article>
+                            <i class="fa-brands fa-python fa-4x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-js fa-4x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-html5 fa-4x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-css3-alt fa-4x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-react fa-3x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-node-js fa-3x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>Node</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-git-alt fa-4x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-brands fa-java fa-4x" style="color: #daa520;"></i>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="skills-details-container">
+                    <h1 class="technical-skills-title">Certifications</h1>
+                    <div class="article-container1">
+                        <article>
+                            <i class="fa-solid fa-code fa-3x" style="color: #d2a520;"></i>
+                            <div>
+                                <h3>Meta Introduction</h3>
+                                <h3>to Front-End Development</h3>
+                                <p>2023</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-code fa-3x" style="color: #d2a520;"></i>
+                            <div>
+                                <h3>Meta Programming</h3>
+                                <h3>with JavaScript</h3>
+                                <p>2023</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-code fa-3x" style="color: #d2a520;"></i>
+                            <div>
+                                <h3>AWS Academy</h3> 
+                                <h3>Cloud Foundations</h3>
+                                <p>2024</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-code fa-3x" style="color: #d2a520;"></i>
+                            <div>
+                                <h3>IBM Getting Started</h3>
+                                <h3>with Threat Intelligence</h3>
+                                <p>2023</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-code fa-3x" style="color: #d2a520;"></i>
+                            <div>
+                                <h3>CISCO Data</h3>
+                                <h3>Analytics Essentials</h3>
+                                <p>2023</p>
+                            </div>
+                        </article>
+                        <article>
+                            <i class="fa-solid fa-code fa-3x" style="color: #d2a520;"></i>
+                            <div>
+                                <h3>IBM</h3>
+                                <h3>Professional Skills Build</h3>
+                                <p>2024</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+             
         </div>
     </section>
     <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="project-container">
-            <div class="project-box">
-                <a href="https://github.com/EnnyBae-Chilled/Temperature-Converter">
-                    <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/img4.png?raw=true" alt="">
-                    <div class="project-layer">
-                    <h4>Temperature Converter</h4>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <div class="project-details-container">
+                <div class="project-box">
+                    <div class="project-box-img">
+                        <a href="https://github.com/EnnyBae-Chilled/Temperature-Converter">
+                            <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/img4.png?raw=true" alt="">
+                            <div class="project-layer">
+                            <h4>Temperature Converter</h4>
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-3x" style="color: #d2a520;"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
-                
-            </div>
-
-            <div class="project-box">
-                <a href="https://github.com/EnnyBae-Chilled/Weather-App">
-                    <img src="https://raw.githubusercontent.com/EnnyBae-Chilled/Personal-Website/main/weather-app.webp" alt="">
-                    <div class="project-layer">
-                        <h4>Weather App</h4>
-                        <p>A web application utilizing the OpenWeatherMap API to retrieve real-time weather data for any city.</p>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+    
+                <div class="project-box">
+                    <div class="project-box-img">
+                        <a href="https://github.com/EnnyBae-Chilled/Weather-App">
+                            <img src="https://raw.githubusercontent.com/EnnyBae-Chilled/Personal-Website/main/weather-app.webp" alt="">
+                            <div class="project-layer">
+                                <h4>Weather App</h4>
+                                <i class="fa-solid fa-arrow-up-right-from-square fa-3x" style="color: #d2a520;"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
-
-            <div class="project-box">
-                <a href="https://github.com/EnnyBae-Chilled/OIBSIP/blob/main/landingpage.html" target="_blank">
-                    <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/img2.png?raw=true" alt="">
-                    <div class="project-layer">
-                        <h4>UI/UX Design</h4>
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+    
+                <div class="project-box">
+                    <div class="project-box-img">
+                        <a href="https://github.com/EnnyBae-Chilled/OIBSIP/blob/main/landingpage.html" target="_blank">
+                            <img src="https://github.com/EnnyBae-Chilled/Personal-Website/blob/main/img2.png?raw=true" alt="">
+                            <div class="project-layer">
+                                <h4>UI/UX Design</h4>
+                                <i class="fa-solid fa-arrow-up-right-from-square fa-3x" style="color: #d2a520;"></i>
+                            </div>
+                        </a>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
